@@ -2,9 +2,9 @@
   "name": "learn-github-actions",
   "version": "1.0.0",
   "description": "Github Actions examples",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,11 @@
     "semantic-release": "^19.0.3"
   },
   "release": {
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }
